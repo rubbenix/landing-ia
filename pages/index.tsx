@@ -1,4 +1,7 @@
 import Image from "next/image";
+import ChatBar from "./components/ChatBar";
+
+
 
 export default function Home() {
   return (
@@ -41,16 +44,22 @@ export default function Home() {
             <span className="text-black">de Mercancías</span>
           </h1>
         </div>
+
+
         <h2 className="text-4xl font-bold text-center text-gray-700 mb-4">
           ¡Calcula tus presupuestos de envío al instante!
         </h2>
         <p className="text-lg text-center mb-6">
           Usa nuestro nuevo chat inteligente para obtener presupuestos rápidos y precisos. ¡Solo empieza a chatear y obtén tu presupuesto en segundos!
         </p>
+
+        {/* Chat */}
         <button
           className="bg-[#7FFFFF] text-black px-6 py-3 rounded-lg shadow-md">
           ¡Empieza a chatear ahora!
         </button>
+        <ChatBar />
+        
         {/* Planes */}
         <div>
           <h1 className="mantine-Text-root mantine-Title-root text-3xl text-center font-bold mb-8 text-darkBlue mt-16 mantine-166d07m">

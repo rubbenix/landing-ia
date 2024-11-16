@@ -1,16 +1,7 @@
 import Image from "next/image";
 import localFont from "next/font/local";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+
 
 export default function Home() {
   return (
@@ -68,19 +59,19 @@ export default function Home() {
           <h1 className="mantine-Text-root mantine-Title-root text-3xl text-center font-bold mb-8 text-darkBlue mt-16 mantine-166d07m">
             Planes
           </h1>
-            <div className="mantine-Container-root max-w-6xl mx-auto px-4 mantine-d9zk78">
+          <div className="manstine-Container-root max-w-6xl mx-auto px-4 mantine-d9zk78">
             <div className="mantine-Grid-root mantine-16fdnqw flex justify-center space-x-4">
               <div className="mantine-Grid-col mantine-qjx5ze">
-              <div className="mantine-Paper-root mantine-Card-root shadow-md p-4 rounded-md border hover:shadow-2xl mantine-othpma"></div>
+                <div className="mantine-Paper-root mantine-Card-root shadow-md p-4 rounded-md border hover:shadow-2xl mantine-othpma"></div>
               </div>
               <div className="mantine-Grid-col mantine-qjx5ze">
-              <div className="mantine-Paper-root mantine-Card-root shadow-md p-4 rounded-md border hover:shadow-2xl mantine-othpma"></div>
+                <div className="mantine-Paper-root mantine-Card-root shadow-md p-4 rounded-md border hover:shadow-2xl mantine-othpma"></div>
               </div>
               <div className="mantine-Grid-col mantine-qjx5ze">
-              <div className="mantine-Paper-root mantine-Card-root shadow-md p-4 rounded-md border hover:shadow-2xl mantine-othpma"></div>
+                <div className="mantine-Paper-root mantine-Card-root shadow-md p-4 rounded-md border hover:shadow-2xl mantine-othpma"></div>
               </div>
             </div>
-            </div>
+          </div>
         </div>
       </main>
 

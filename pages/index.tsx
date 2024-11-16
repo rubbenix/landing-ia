@@ -44,13 +44,27 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="flex-grow w-full flex flex-col items-center justify-center p-6">
+        <div className="flex-grow w-full flex flex-col items-start justify-start p-6">
+          <h1 className="text-gray text-5xl md:text-6xl lg:text-7xl font-aileron font-semibold">
+            Transporte
+            <br />
+            <span className="text-[#7FFFFF]">Inernacional</span>
+            <br />
+            <span className="text-black">de Mercancías</span>
+          </h1>
+        </div>
         <h2 className="text-4xl font-bold text-center text-gray-700 mb-4">
-          Bienvenido a EnvioXEnvio
+          ¡Calcula tus presupuestos de envío al instante!
         </h2>
-        <button className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700">
-          TESTING
+        <p className="text-lg text-center mb-6">
+          Usa nuestro nuevo chat inteligente para obtener presupuestos rápidos y precisos. ¡Solo empieza a chatear y obtén tu presupuesto en segundos!
+        </p>
+        <button
+          className="bg-[#7FFFFF] text-black px-6 py-3 rounded-lg shadow-md">
+          ¡Empieza a chatear ahora!
         </button>
       </main>
+
 
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-8 w-full">

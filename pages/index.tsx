@@ -3,6 +3,7 @@ import ChatBar from "./components/ChatBar";
 import styles from "./components/Home.module.css";
 import { useState } from "react";
 import PlanCard from "./components/PlanCard";
+import{BenefitsCards} from "./components/BenefitsCards";
 
 export default function Home() {
   // Estat per controlar la visibilitat del chat
@@ -13,9 +14,6 @@ export default function Home() {
   };
   return (
     <div className="bg-gray-50 min-h-screen flex flex-col items-center">
-
-
-
       {/* Header */}
       <header className="w-full bg-black p-4 text-white flex justify-between items-center">
         <div className="flex items-center space-x-2">
@@ -95,13 +93,19 @@ export default function Home() {
             </>
           )}
         </div>
-
-        {/* Planes */}
-        <PlanCard/>
-
+        {/* Benefits */}
+        <BenefitsCards/>
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '5rem' }}></div>
 
-      
+        {/* Planes */}
+        <PlanCard />
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '5rem' }}></div>
+
+
+        
+        
+       
+
 
       </main>
 

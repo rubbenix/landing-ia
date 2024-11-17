@@ -1,0 +1,128 @@
+.home {
+    font-family: Arial, sans-serif;
+}
+/*HEADER*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #007bff;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #f7f9fc;
+    border-bottom: 1px solid #ddd;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #666;
+}
+
+.ctaButton {
+    background-color: #7FFFFF;
+    color: #000000;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.ctaButton:hover {
+    background-color: #0056b3;
+}
+
+/* Botón flotante */
+.floatingButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.floatingButton span {
+    margin-left: 10px;
+    font-size: 0.9rem;
+}
+
+.floatingButton:hover {
+    background-color: #0056b3;
+}
+
+
+/* Overlay para atenuar la página */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Fondo semi-transparente */
+    z-index: 999;
+    /* Debe estar debajo del chat y del botón flotante */
+    cursor: pointer;
+}
+
+/* Contenedor del Chat */
+.chatContainer {
+    position: fixed;
+    bottom: 70px;
+    /* Espacio para que no se sobreponga con el botón flotante */
+    right: 20px;
+    width: 400px;
+    /* Ajusta según sea necesario */
+    max-height: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background: #fff;
+    z-index: 1000;
+    /* Debe estar encima del overlay */
+    overflow: hidden;
+}
+
+/* Botón flotante */
+.floatingButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1100;
+    /* Por encima del overlay */
+}
+
+.floatingButton span {
+    margin-left: 10px;
+    font-size: 0.9rem;
+}
+
+.floatingButton:hover {
+    background-color: #0056b3;
+}

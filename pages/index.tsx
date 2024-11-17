@@ -1,11 +1,21 @@
 import Image from "next/image";
 import ChatBar from "./components/ChatBar";
-
-
+import ChatBot from "./components/ChatBot";
+import styles from "./components/Home.module.css";
+import { useState } from "react";
 
 export default function Home() {
+  // Estat per controlar la visibilitat del chat
+  const [isChatVisible, setIsChatVisible] = useState(false);
+  // Funció per mostrar el chat
+  const toggleChat = () => {
+    setIsChatVisible((prevState) => !prevState); // Alternar visibilitat
+  };
   return (
     <div className="bg-gray-50 min-h-screen flex flex-col items-center">
+
+
+
       {/* Header */}
       <header className="w-full bg-black p-4 text-white flex justify-between items-center">
         <div className="flex items-center space-x-2">
@@ -33,6 +43,8 @@ export default function Home() {
         </div>
       </header>
 
+
+
       {/* Main Content */}
       <main className="flex-grow w-full flex flex-col items-center justify-center p-6">
         <div className="flex-grow w-full flex flex-col items-start justify-start p-6">
@@ -45,21 +57,41 @@ export default function Home() {
           </h1>
         </div>
 
-
         <h2 className="text-4xl font-bold text-center text-gray-700 mb-4">
-          ¡Calcula tus presupuestos de envío al instante!
-        </h2>
+          ¡Conoce a tu nuevo asistente inteligente!        </h2>
         <p className="text-lg text-center mb-6">
-          Usa nuestro nuevo chat inteligente para obtener presupuestos rápidos y precisos. ¡Solo empieza a chatear y obtén tu presupuesto en segundos!
-        </p>
+          Resuelve tus dudas, encuentra soluciones rápidas y obtén ayuda
+          instantánea con nuestro chat impulsado por IA.        </p>
 
-        {/* Chat */}
-        <button
-          className="bg-[#7FFFFF] text-black px-6 py-3 rounded-lg shadow-md">
-          ¡Empieza a chatear ahora!
+        {/* Button to Chat */}
+        <button onClick={toggleChat} className={styles.ctaButton}>
+          {isChatVisible ? "¡Habla con nuestro asistente ahora!" : "¡Habla con nuestro asistente ahora!"}
         </button>
-        <ChatBar />
-        
+        {/* ChatBot flotant dreta */}
+        <div className={styles.home}>
+          {/* Floating button*/}
+          <div className={styles.floatingButton} onClick={toggleChat}>
+            <Image
+              src="/logoX.svg"
+              alt="Chat Icon"
+              width={40}
+              height={40}
+            />
+            <span>{isChatVisible ? "Cerrar chat" : "¿Necesitas ayuda?"}</span>
+          </div>
+          {/* Renderitzar ChatBar si està visible */}
+          {isChatVisible && (
+            <>
+              <div className={styles.overlay} onClick={toggleChat}></div>
+              <div className={styles.chatContainer}>
+                <ChatBar />
+              </div>
+            </>
+          )}
+        </div>
+
+
+
         {/* Planes */}
         <div>
           <h1 className="mantine-Text-root mantine-Title-root text-3xl text-center font-bold mb-8 text-darkBlue mt-16 mantine-166d07m">
@@ -80,6 +112,7 @@ export default function Home() {
           </div>
         </div>
       </main>
+
 
 
       {/* Footer */}

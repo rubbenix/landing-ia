@@ -1,5 +1,4 @@
 import React from 'react';
-import './PlanCards.module.css';
 
 const PlanCard = () => {
     return (

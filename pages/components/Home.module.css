@@ -126,3 +126,12 @@
 .floatingButton:hover {
     background-color: #0056b3;
 }
+
+.customtitle {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 700; /* font-bold */
+    text-align: center; /* text-center */
+    color: #4a5568; /* text-gray-700 */
+    margin-bottom: 1rem; /* mb-4 */
+  }
+  

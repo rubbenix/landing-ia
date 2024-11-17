@@ -2,6 +2,7 @@ import Image from "next/image";
 import ChatBar from "./components/ChatBar";
 import styles from "./components/Home.module.css";
 import { useState } from "react";
+import PlanCard from "./components/PlanCard";
 
 export default function Home() {
   // Estat per controlar la visibilitat del chat
@@ -89,27 +90,10 @@ export default function Home() {
           )}
         </div>
 
-
-
         {/* Planes */}
-        <div>
-          <h1 className="mantine-Text-root mantine-Title-root text-3xl text-center font-bold mb-8 text-darkBlue mt-16 mantine-166d07m">
-            Planes
-          </h1>
-          <div className="manstine-Container-root max-w-6xl mx-auto px-4 mantine-d9zk78">
-            <div className="mantine-Grid-root mantine-16fdnqw flex justify-center space-x-4">
-              <div className="mantine-Grid-col mantine-qjx5ze">
-                <div className="mantine-Paper-root mantine-Card-root shadow-md p-4 rounded-md border hover:shadow-2xl mantine-othpma"></div>
-              </div>
-              <div className="mantine-Grid-col mantine-qjx5ze">
-                <div className="mantine-Paper-root mantine-Card-root shadow-md p-4 rounded-md border hover:shadow-2xl mantine-othpma"></div>
-              </div>
-              <div className="mantine-Grid-col mantine-qjx5ze">
-                <div className="mantine-Paper-root mantine-Card-root shadow-md p-4 rounded-md border hover:shadow-2xl mantine-othpma"></div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <PlanCard/>
+      
+
       </main>
 
 

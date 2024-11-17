@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Grid, Container, Title, Text, Group } from '@mantine/core';
 import { IconBrandGithubCopilot, IconCurrentLocation, IconPackage, IconSettingsAutomation } from '@tabler/icons-react';
 import styles from "./Home.module.css";

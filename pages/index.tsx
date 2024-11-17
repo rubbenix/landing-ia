@@ -44,10 +44,10 @@ export default function Home() {
       </header>
 
 
-
+      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '5rem' }}></div>
       {/* Main Content */}
       <main className="flex-grow w-full flex flex-col items-center justify-center p-6">
-        <div className="flex-grow w-full flex flex-col items-start justify-start p-6">
+        <div className=" px flex-grow w-full flex flex-col items-start justify-start p-6">
           <h1 className="text-gray text-5xl md:text-6xl lg:text-7xl font-aileron font-semibold">
             Transporte
             <br />
@@ -56,6 +56,8 @@ export default function Home() {
             <span className="text-black">de Mercancías</span>
           </h1>
         </div>
+
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '5rem' }}></div>
 
         <h2 className="text-4xl font-bold text-center text-gray-700 mb-4">
           ¡Conoce a tu nuevo asistente inteligente!        </h2>
@@ -67,6 +69,10 @@ export default function Home() {
         <button onClick={toggleChat} className={styles.ctaButton}>
           {isChatVisible ? "¡Habla con nuestro asistente ahora!" : "¡Habla con nuestro asistente ahora!"}
         </button>
+
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '5rem' }}></div>
+
+
         {/* ChatBot flotant dreta */}
         <div className={styles.home}>
           {/* Floating button*/}
@@ -92,6 +98,9 @@ export default function Home() {
 
         {/* Planes */}
         <PlanCard/>
+
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '5rem' }}></div>
+
       
 
       </main>

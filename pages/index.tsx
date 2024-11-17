@@ -1,6 +1,5 @@
 import Image from "next/image";
 import ChatBar from "./components/ChatBar";
-import ChatBot from "./components/ChatBot";
 import styles from "./components/Home.module.css";
 import { useState } from "react";
 

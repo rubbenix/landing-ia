@@ -27,7 +27,7 @@ const data = [
 ];
 
 
-export const BenefitsCards = () => {
+const BenefitsCards = () => {
     return (
         <Container
             sx={{
@@ -96,3 +96,4 @@ export const BenefitsCards = () => {
         </Container>
     );
 };
+export default BenefitsCards;

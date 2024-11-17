@@ -3,7 +3,7 @@ import ChatBar from "./components/ChatBar";
 import styles from "./components/Home.module.css";
 import { useState } from "react";
 import PlanCard from "./components/PlanCard";
-import{BenefitsCards} from "./components/BenefitsCards";
+import BenefitsCards from "./components/BenefitsCards";
 
 export default function Home() {
   // Estat per controlar la visibilitat del chat

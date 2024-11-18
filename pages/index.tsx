@@ -70,12 +70,14 @@ export default function Home() {
 
           <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '5rem' }}></div>
         </section>
-        <h2 className="text-4xl font-bold text-center text-gray-700 mb-4">
-          ¡Conoce a tu nuevo asistente inteligente!        
+        <h2 className={styles.customTitle}>
+          ¡Conoce a tu nuevo{' '}
+          <span className={styles.highlight}>Asistente Inteligente</span>
         </h2>
+
         <p className="text-lg text-center mb-6">
           Resuelve tus dudas, encuentra soluciones rápidas y obtén ayuda
-          instantánea con nuestro chat impulsado por IA.        
+          instantánea con nuestro chat impulsado por IA.
         </p>
 
         {/* Button to Chat */}
@@ -83,7 +85,7 @@ export default function Home() {
           {isChatVisible ? "¡Habla con nuestro asistente ahora!" : "¡Habla con nuestro asistente ahora!"}
         </button>
 
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '5rem' }}></div>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '3rem' }}></div>
 
 
         {/* ChatBot flotant dreta */}
@@ -110,7 +112,7 @@ export default function Home() {
         </div>
         {/* Benefits */}
         <BenefitsCards />
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '5rem' }}></div>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem' }}></div>
 
         {/* Planes */}
         <PlanCard />

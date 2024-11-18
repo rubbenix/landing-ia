@@ -4,7 +4,7 @@ const PlanCard = () => {
     return (
         <>
             <h1 className="mantine-Text-root mantine-Title-root text-3xl text-center font-bold mb-8 text-darkBlue mt-16 mantine-166d07m">
-                Planes de nuestra I.A
+                Planes de Suscripción
             </h1>
             <div className="manstine-Container-root max-w-6xl mx-auto px-4 mantine-d9zk78">
                 <div className="mantine-Grid-root mantine-16fdnqw flex justify-center space-x-4">

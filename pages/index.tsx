@@ -41,27 +41,42 @@ export default function Home() {
         </div>
       </header>
 
-
-      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '5rem' }}></div>
       {/* Main Content */}
-      <main className="flex-grow w-full flex flex-col items-center justify-center p-6">
-        <div className=" px flex-grow w-full flex flex-col items-start justify-start p-6">
-          <h1 className="text-gray text-5xl md:text-6xl lg:text-7xl font-aileron font-semibold">
-            Transporte
-            <br />
-            <span className="text-[#7FFFFF]">Inernacional</span>
-            <br />
-            <span className="text-black">de Mercancías</span>
-          </h1>
-        </div>
+      <main className="flex-grow w-full flex flex-col items-center justify-center">
+        {/* Video de fondo */}
+        <section className="relative w-full max-w-none h-[500px] flex items-center justify-center overflow-hidden mb-10">
 
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '5rem' }}></div>
+          <video
+            className="absolute inset-0 w-full h-full object-cover"
+            src="./video.m4v"
+            autoPlay
+            loop
+            muted
+            playsInline
+          ></video>
+          <div className="absolute inset-0 bg-black opacity-30 z-10"></div>
 
+
+          {/* Contingut principal */}
+          <div className="relative z-20 px flex-grow w-full flex flex-col items-start justify-start p-6">
+            <h1 className="text-white text-5xl md:text-6xl lg:text-7xl font-aileron font-semibold">
+              Transporte
+              <br />
+              <span className="text-[#7FFFFF]">Inernacional</span>
+              <br />
+              <span className="text-white">de Mercancías</span>
+            </h1>
+          </div>
+
+          <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '5rem' }}></div>
+        </section>
         <h2 className="text-4xl font-bold text-center text-gray-700 mb-4">
-          ¡Conoce a tu nuevo asistente inteligente!        </h2>
+          ¡Conoce a tu nuevo asistente inteligente!        
+        </h2>
         <p className="text-lg text-center mb-6">
           Resuelve tus dudas, encuentra soluciones rápidas y obtén ayuda
-          instantánea con nuestro chat impulsado por IA.        </p>
+          instantánea con nuestro chat impulsado por IA.        
+        </p>
 
         {/* Button to Chat */}
         <button onClick={toggleChat} className={styles.ctaButton}>
@@ -94,7 +109,7 @@ export default function Home() {
           )}
         </div>
         {/* Benefits */}
-        <BenefitsCards/>
+        <BenefitsCards />
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '5rem' }}></div>
 
         {/* Planes */}
@@ -102,9 +117,9 @@ export default function Home() {
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '5rem' }}></div>
 
 
-        
-        
-       
+
+
+
 
 
       </main>
